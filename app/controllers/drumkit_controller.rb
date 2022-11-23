@@ -1,0 +1,2 @@
+class DrumkitController < ApplicationController
+end
