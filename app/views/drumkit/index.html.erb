@@ -1,3 +1,22 @@
+<div>
+<p id="track">Track</p>
+</div>
+
+<div id="block-btn">
+<button class="glow-on-hover" type="button" id="record"> RECORD </button>
+<button class="glow-on-hover" type="button" id="ear"> EAR </button>
+<button class="glow-on-hover" type="button" id="save"> SAVE </button>
+
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+
+<%= hidden_field_tag 'idtest' %>
+
+<%= submit_tag "Ajouter au panier", class:"glow-on-hover" %>
+
+<% end %> 
+
+</div>
+
 <div class="keys">
     <div data-key="81" class="key">
       <kbd>Q</kbd>
@@ -46,4 +65,3 @@
   <audio data-key="74" src="assets/snare.wav"></audio>
   <audio data-key="75" src="assets/tom.wav"></audio>
   <audio data-key="76" src="assets/tink.wav"></audio>
-
